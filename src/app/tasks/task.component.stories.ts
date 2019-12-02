@@ -26,12 +26,20 @@ const actions = {
 export default {
   // Section | Path / Name
   title: 'Design System|Productivity/Task',
+  componentSubtitle: 'Task items with states.',
   decorators: [
     // Add configurable knobs
     withKnobs
   ],
   // Used for doc gen for component properties
-  component: TaskComponent
+  component: TaskComponent,
+  // Notes displayed in the Storybook UI.
+  parameters: {
+    notes: {
+      'Introduction': 'Some notes about this component or usage',
+      'Design Notes': 'More notes on design'
+    },
+  }
 };
 
 // Stories
