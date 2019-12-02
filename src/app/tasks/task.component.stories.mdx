@@ -1,0 +1,21 @@
+import { Meta, Story, Preview, Source } from '@storybook/addon-docs/blocks';
+import * as stories from './task.component.stories';
+import { TaskComponent } from './task.component';
+
+<Meta title='Design System|Productivity/Task' component={TaskComponent} />
+
+# Task Item
+
+Tasks are items with some text and a checkbox to indicate the current state.
+
+<Story name="standard">{stories.standard()}</Story>
+
+A task item in its default state.
+
+<Story name="pinned">{stories.pinned()}</Story>
+
+A task item in its pinned state.
+
+<Story name="archived">{stories.archived()}</Story>
+
+A task item in its archived state.
