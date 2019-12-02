@@ -9,7 +9,6 @@ function loadStories() {
   req.keys().forEach(filename => req(filename));
 }
 
-// automatically import all files ending in *.stories.js|ts|mdx
-configure(require.context('../src', true, /\.stories\.([jt]s|mdx)$/), module);
+configure(req, module);
 
 configure(loadStories, module);
