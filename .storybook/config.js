@@ -3,12 +3,4 @@ import { configure } from '@storybook/angular';
 import '../src/styles.less';
 
 // automatically import all files ending in *.stories.ts
-const req = require.context('../src/', true, /\.stories.ts$/);
-
-function loadStories() {
-  req.keys().forEach(filename => req(filename));
-}
-
-configure(req, module);
-
-configure(loadStories, module);
+configure(require.context('../src', true, /\.stories\.ts$/), module);
