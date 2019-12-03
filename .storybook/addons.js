@@ -20,3 +20,7 @@ import '@storybook/addon-storysource/register';
 // Links to navigate between stories.
 // https://www.npmjs.com/package/@storybook/addon-links
 import '@storybook/addon-links/register';
+
+// Display components in different sizes and layouts.
+// https://www.npmjs.com/package/@storybook/addon-viewport
+import '@storybook/addon-viewport/register';
